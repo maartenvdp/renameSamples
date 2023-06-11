@@ -20,6 +20,6 @@ with open('list_newnames.txt') as file:
 for old, n in zip(list, newnames):
     new = destpath + n + '.wav'
     print(os.path.basename(old) , 'converted to:' , os.path.basename(new))
-    shutil.copyfile(old, new)    
+    shutil.copyfile(old, new )    
 
 exit(0)
